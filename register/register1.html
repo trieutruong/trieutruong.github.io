@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script language="javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<body>
+	<h3>Đăng kí thành công</h3>
+	<p id="username">Ten dang nhap la: </p>
+	<p id="year">Nam sinh: </p>
+	<p id="gender">Gioi tinh: </p>
+	<p id="address">Dia chi: </p>
+	<p id="number">Dien thoai: </p>
+	<p id="email">Email: </p>
+	<p id="password">Mat khau: </p>
+	<script type="text/javascript">
+	function GetURLParameter(sParam)
+{
+    var sPageURL = window.location.search.substring(1);
+    var abc =decodeURIComponent(sPageURL);
+    var sURLVariables = abc.split('&');
+    for (var i = 0; i < sURLVariables.length; i++)
+    {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam)
+        {
+            return sParameterName[1];
+        }	
+    }
+}		
+	$(document).ready(function(){
+		var user = GetURLParameter("username");
+		var year = GetURLParameter("year");
+		var add = GetURLParameter("address");
+		var num = GetURLParameter("number");
+		var mail = GetURLParameter("email");
+		var password = GetURLParameter("password");
+		var gender = GetURLParameter("gender");
+		$('#username').append(user);
+		$('#year').append(year);
+		$('#gender').append(gender);
+		$('#address').append(add);
+		$('#number').append(num);
+		$('#email').append(mail);
+		$('#password').append(password);
+	});
+    </script>
+</body>
+
+</html>
