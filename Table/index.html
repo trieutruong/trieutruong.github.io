@@ -1,0 +1,76 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <title>Document</title>
+         <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+        <script type="text/javascript" src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+   </head>
+   <body>
+      <div class="example">
+        <div class="container">
+            <div class="row">
+                <h2>Table Reponsive</h2>
+                <div class="table-responsive">    
+                    <table class="table table-bordered table-hover table-sorter" id="example">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Họ Tên</th>
+                                <th>Giới tính</th>
+                                <th>Email</th>
+                                <th>Địa chỉ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="active">
+                                <td>1</td>
+                                <td>Văn Cường</td>
+                                <td>Nam</td>
+                                <td>kakaka@mail.com</td>
+                                <td>68 ABC</td>
+                            </tr>
+                            <tr class="success">
+                                <td>2</td>
+                                <td>Hoài Minh</td>
+                                <td>Nu</td>
+                                <td>hoaiminhit1990@mail.com</td>
+                                <td>68 ABC</td>
+
+                            </tr>
+                            <tr class="danger">
+                                <td>3</td>
+                                <td>Quốc Minh</td>
+                                <td>Nam</td>
+                                <td>quocminh@mail.com</td>
+                                <td>68 ABC</td>
+
+                            </tr>
+                            <tr class="warning">
+                                <td>3</td>
+                                <td>Huy Phong</td>
+                                <td>Nam</td>
+                                <td>phongalibaba@mail.com</td>
+                                <td>68 ABC</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                 </div>   
+            </div>
+        </div>
+    </div>
+    <script >
+    $(document).ready(function() {
+        $('#example').DataTable({
+            order: [[ 3, 'desc' ], [ 0, 'asc' ]]
+        });
+    } );
+    </script>
+   </body>
+   </html>
+  
