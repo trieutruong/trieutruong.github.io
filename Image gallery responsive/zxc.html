@@ -1,0 +1,34 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <div id = "paragraph">
+    <p id ="para1" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi vero doloremque perferendis expedita optio nobis ex ipsa tempore reprehenderit dolor tenetur quasi minima atque maiores reiciendis labore repellendus, alias blanditiis?</p>
+    <p id ="para2" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quos provident, dignissimos ratione, fugiat facilis corrupti eos, consequuntur maiores laboriosam quis quia a nam, ea consequatur consectetur officiis quo magni!</p>
+    <p id ="para3" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas assumenda vero magni labore reprehenderit, sapiente possimus iste nostrum architecto reiciendis vitae quam aspernatur, a, saepe recusandae minima et sint nesciunt.</p>
+    </div>
+  </body>
+<html>
+  <head>
+  </head>
+  <body>
+    <div id = "paragraph">
+    <p id ="para1" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi vero doloremque perferendis expedita optio nobis ex ipsa tempore reprehenderit dolor tenetur quasi minima atque maiores reiciendis labore repellendus, alias blanditiis?</p>
+    <p id ="para2" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quos provident, dignissimos ratione, fugiat facilis corrupti eos, consequuntur maiores laboriosam quis quia a nam, ea consequatur consectetur officiis quo magni!</p>
+    <p id ="para3" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas assumenda vero magni labore reprehenderit, sapiente possimus iste nostrum architecto reiciendis vitae quam aspernatur, a, saepe recusandae minima et sint nesciunt.</p>
+    </div>
+  </body>
+  <script type="text/javascript">function change_font_size(x){
+  var a = document.getElementsByClassName('para');
+  for(var i = 0; i<a.length; i++){
+    a[i].style.fontSize = x +'px';
+  }
+}
+function increaseFontSize(y){
+  var a = parseInt(document.getElementById(y).style.fontSize);
+  if(a<=30){
+    document.getElementById(y).style.fontSize = a + 5 +'px';
+  }
+}
+  </script>
+</html>

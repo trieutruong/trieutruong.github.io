@@ -1,0 +1,184 @@
+html, body{
+	padding: 0px;
+	margin: 0px;
+}
+
+*{box-sizing: border-box;}
+
+img{max-width: 100%;}
+
+body{
+	font-family: "Open Sans",arial, sans-serif;
+	font-weight: 500;
+	background-color: #fff;
+}
+
+.wrap{
+	margin: 0 100px;
+	max-width: 1000px;
+}
+
+#main-content{
+	margin: 0 auto;
+	width: 100%;
+	margin-left: 30px;
+}
+.logo{
+	max-width: 50%;
+} 
+ 
+* {
+  margin: 0;
+  padding: 0;
+}
+ 
+/*==Style cho menu===*/
+/*.menu ul {
+  background: #1F568B;
+  list-style-type: none;
+  text-align: center;
+}
+.menu li {
+  color: #f1f1f1;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.menu a:hover {
+  background: #F1F1F1;
+  color: #333;
+}
+
+.sub-menu{
+	display: none;
+	position: absolute;
+	padding-left: 5px;
+}
+
+.menu li:hover .sub-menu{
+	display: block;
+}
+*/
+.menu{
+	margin-bottom: 120px;
+}
+
+.menu ul{
+	list-style-type: none;
+	background: #1f568b;
+	text-align: center;
+}
+
+.menu ul li {
+	color: #f1f1f1;
+	display: inline-block;
+	height: 40px;
+	width: 120px;
+	line-height: 40px;
+	position: relative;
+	margin-left: -5px;
+}
+
+.menu ul li a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	transition: all 0.5s ease;
+}
+
+.menu ul li a:hover{
+	background: #ccc;
+	color: #333;
+}
+
+.sub-menu{
+	display: none;
+	position: absolute;
+	padding-left: 5px;
+}
+
+.menu ul li:hover .sub-menu{
+	display: block;
+}
+
+/*.col{
+	width: 33.3333%;
+	float: left;
+	padding: 15px;
+	background-color: #fff;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.thumb{
+	padding: 4px 15px;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}
+
+.thumb img{
+	vertical-align: middle;
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out, max-width 1s linear;
+}
+
+.thumb:hover img{
+	opacity: 0.5;
+	max-width: 90%;
+}*/
+.navbar.navbar-default{
+	background: #78f78e;
+	border: none;
+}
+#banner img{
+	width: 100%;
+}
+
+.thumb2 img{
+	vertical-align: middle;
+	width: 80%;
+}
+
+.thumb2{
+	overflow: hidden;
+}
+
+.thumb2 img{
+	padding: 4px;
+	transition: all 0.5s linear;
+}
+
+.thumb2:hover img{
+	transform: scale(0.9);
+	opacity: 0.5;
+}
+.col{
+	width: 33.33%;
+	cursor: pointer;
+	float: left;
+	padding: 15px;
+	background-color: #fff;
+}
+
+.col{
+	width: 33.33%;
+	float: left;
+	padding: 15px;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.item{
+	margin: 40px 0px;
+}
+
